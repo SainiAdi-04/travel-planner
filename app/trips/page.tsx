@@ -17,7 +17,7 @@ export default async function TripsPage(){
             {" "}
         <h1>Dashboard</h1>
         <Link href={"/trips/new"}>
-        <Button>New Trip</Button>
+        <Button >New Trip</Button>
         </Link>
         </div>
 
