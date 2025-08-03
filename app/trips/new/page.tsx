@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/cards"
+import { createTrip } from "@/lib/actions/create-trip"
 
 export default function NewTrip() {
     return (
@@ -9,7 +10,7 @@ export default function NewTrip() {
             <Card>
                 <CardHeader>New Trip</CardHeader>
                 <CardContent>
-                    <form className="space-y-4">
+                    <form className="space-y-4" action={createTrip}>
                         <div>
                             <label className="block text-sm font-medium text-gray-700">{" "}Title</label>
                             <input type="text" name="title" placeholder="Japan trip...." className="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />
